@@ -1,0 +1,32 @@
+Unveränderte Funktionen:
+	Funkiton 1:
+		public static int calculateScore(String word){
+			int score = 0;
+			for (char c : word.toCharArray()) {
+				score++;
+			}
+			return score;
+		}
+	
+	Funkiton 2:
+		public static int wordScore(String word){
+			return word.length();
+		}
+
+Finale Funkitonen:
+	Funkiton 1:
+		public static int calculateScore(String word){
+			int score = 0;
+			for (char c : word.toCharArray()) {
+				if (c == 'a' || c == 'A'){
+					score--;
+				}
+				score++;
+			}
+			return score;
+		}
+	
+	Funkiton 2:
+		public static int wordScore(String word){
+			return word.replace('a','').replace('A', '').length();
+		}
